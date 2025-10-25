@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="DeletePanel">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-14671322"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="1888b">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-13091774"/>
+          <foreground color="-13091774"/>
+        </properties>
+        <border type="none" title=""/>
+        <children>
+          <component id="d90e3" class="javax.swing.JTable" binding="table1" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-13091774"/>
+              <foreground color="-856600"/>
+              <gridColor color="-856600"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="bb5c3" class="javax.swing.JButton" binding="DELETESELECTEDButton" default-binding="true">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-13091774"/>
+          <foreground color="-856600"/>
+          <text value="DELETE SELECTED"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
