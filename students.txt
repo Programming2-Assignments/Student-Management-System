@@ -8,13 +8,8 @@
 1007,Farah Nabil,22,Female,Information Systems,3.4
 1008,Omar Adel,20,Male,Data Science,3.6
 1009,Mariam Zaki,19,Female,Artificial Intelligence,3.9
-1010,Youssef Magdy,21,Male,Software Engineering,3.3
-1011,Malk Hassan,22,Female,Cybersecurity,3.7
 1012,Mahmoud Tamer,20,Male,Information Systems,3.4
 1013,Hana Fathy,21,Female,Computer Science,3.8
 1014,Omar Gamal,22,Male,Data Science,3.5
-1015,Layla Nader,19,Female,Artificial Intelligence,3.9
 1016,Mostafa Eid,23,Male,Cybersecurity,3.2
 1017,Nada Sherif,21,Female,Software Engineering,3.6
-1018,Karim Hassan,22,Male,Computer Science,3.7
-1019,Dina Reda,20,Female,Information Systems,3.8

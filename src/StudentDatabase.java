@@ -63,11 +63,8 @@ public class StudentDatabase {
     }
 
     public void deleteStudent(int id){
-        for (Student student : records){
-            if (student.getStudentID() == id){
-                records.remove(student);
-            }
-        }
+
+        records.removeIf(student -> student.getStudentID() == id);
     }
 
     public Student searchStudent(String key){
