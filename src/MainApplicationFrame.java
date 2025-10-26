@@ -257,14 +257,20 @@ public class MainApplicationFrame extends JFrame {
 
                 int age = Integer.parseInt(ageText);
                 float gpa = Float.parseFloat(gpaText);
-
+                if (gpa < 0.00f || gpa > 4.00f) {
+                    JOptionPane.showMessageDialog(this, "GPA must be between 0.00 and 4.00.", "Validation Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                if (age < 15 || age > 40) {
+                    JOptionPane.showMessageDialog(this, "Age must be between 15 and 40 years.", "Validation Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
                 int newID = manager.getAllStudents().stream()
                         .mapToInt(Student::getStudentID)
                         .max().orElse(1000) + 1;
 
                 Student newStudent = new Student(newID, name, age, gender, dept, gpa);
                 manager.addStudent(newStudent);
-
                 JOptionPane.showMessageDialog(this, "Student Added Successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
                 clearAddForm();
                 updateStudentTable(viewTable);
@@ -273,6 +279,7 @@ public class MainApplicationFrame extends JFrame {
                 JOptionPane.showMessageDialog(this, "Age and GPA must be valid numbers.", "Validation Error", JOptionPane.ERROR_MESSAGE);
             }
         });
+
         CLEARButton.addActionListener(e -> clearAddForm());
     }
 
@@ -403,14 +410,12 @@ public class MainApplicationFrame extends JFrame {
     }
     private void clearSearchData() {
         enterIDOrNameTextField.setText("");
-        IDTextField.setText("");
-        NAMETextField.setText("");
-        DEPARTMENTTextField.setText("");
-        GPATextField.setText("");
-
-        // Clear table
+        IDTextField.setText("ID:");
+        NAMETextField.setText("NAME:");
+        DEPARTMENTTextField.setText("DEPARTMENT:");
+        GPATextField.setText("GPA:");
         DefaultTableModel model = (DefaultTableModel) searchTable.getModel();
-        model.setRowCount(0); // removes all rows
+        model.setRowCount(0);
     }
 
     private void Save() {
