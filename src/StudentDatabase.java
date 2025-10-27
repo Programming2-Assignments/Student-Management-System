@@ -51,11 +51,11 @@ public class StudentDatabase {
         records.add(student);
     }
 
-    public void updateStudent(Student s) {
+    public void updateStudent(Student s,Student o) {
         int i = 0;
         for (Student student : records){
-            if (student.getStudentID() == s.getStudentID()){
-                records.set(i , student);
+            if (student.getStudentID() == o.getStudentID()){
+                records.set(i , s);
                 break;
             }
             i++;

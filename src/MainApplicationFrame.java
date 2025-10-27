@@ -191,9 +191,6 @@ public class MainApplicationFrame extends JFrame {
         searchPanel.add(new JLabel(""));
         searchPanel.add(new JLabel(""));
 
-        searchPanel.add(IDTextField);
-        searchPanel.add(new JLabel(""));
-        searchPanel.add(new JLabel(""));
 
         searchPanel.add(NAMETextField);
         searchPanel.add(new JLabel(""));
@@ -355,8 +352,8 @@ public class MainApplicationFrame extends JFrame {
                     return;
                 }
 
-                Student updatedStudent = new Student(id, name, original.getAge(), original.getGender(), dept, gpa);
-                manager.updateStudent(updatedStudent);
+                Student updatedStudent = new Student(original.getStudentID(), name, original.getAge(), original.getGender(), dept, gpa);
+                manager.updateStudent(updatedStudent, original);
 
                 JOptionPane.showMessageDialog(this, "Student record updated!", "Success", JOptionPane.INFORMATION_MESSAGE);
                 updateStudentTable(viewTable);

@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="512" height="416"/>
     </constraints>
     <properties>
       <background color="-14671322"/>
@@ -59,28 +59,6 @@
           <text value="UPDATE"/>
         </properties>
       </component>
-      <component id="ae8d1" class="javax.swing.JTable" binding="StudetTable">
-        <constraints>
-          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
-          </grid>
-        </constraints>
-        <properties>
-          <dropMode value="USE_SELECTION"/>
-        </properties>
-      </component>
-      <component id="e4ae8" class="javax.swing.JTextField" binding="IDTextField" default-binding="true">
-        <constraints>
-          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-13091774"/>
-          <foreground color="-856600"/>
-          <text value="ID:"/>
-        </properties>
-      </component>
       <component id="7cfc4" class="javax.swing.JTextField" binding="NAMETextField" default-binding="true">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
@@ -115,6 +93,16 @@
           <background color="-13091774"/>
           <foreground color="-856600"/>
           <text value="GPA:"/>
+        </properties>
+      </component>
+      <component id="ae8d1" class="javax.swing.JTable" binding="StudetTable">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <dropMode value="USE_SELECTION"/>
         </properties>
       </component>
     </children>

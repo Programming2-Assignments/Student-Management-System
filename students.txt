@@ -13,3 +13,5 @@
 1014,Omar Gamal,22,Male,Data Science,3.5
 1016,Mostafa Eid,23,Male,Cybersecurity,3.2
 1017,Nada Sherif,21,Female,Software Engineering,3.6
+1018,moamen wael,21,Male,CCE,4.0
+1019,ibrahim hany,20,Male,CCE,1.92
